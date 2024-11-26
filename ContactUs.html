@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Page Title & Favicon -->
+		<title> The Garden Shop </title>
+		<link rel="icon" type="image/png" href="photos/favicon.png">
+		
+		<!-- Add Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+		
+		<style>
+			#contactForm{
+				border: 1px solid #e3e3e3;
+				padding-left: 25px;
+				padding-right: 25px;
+				padding-top: 20px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+	
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-sm navbar-light">
+			<div class="container">
+				<a href="GardenShop.html" class="navbar-brand"> 
+					<img src="photos/garden-shop-logo.png" alt="Company Logo" height="80">
+				</a>
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navmenu">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a href="GardenShop.html" class="nav-link mx-3">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a href="GardenPlants.html" class="nav-link mx-3">PRODUCT LIST</a>
+						</li>
+						<li class="nav-item">
+							<a href="ContactUs.html" class="nav-link mx-3">CONTACT US</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+		
+	<!-- Form -->	
+	<section>
+		<div class="container">
+			<div class="text-center">
+				<h2>Get in Touch</h2>
+				<p class="lead">Questions to ask? Fill out the form to contact us directly.</p>
+			</div>
+        
+			<!-- Form Body -->
+			<div class="row justify-content-center my-5">
+				<div class="col-lg-6 col-sm-6">
+					<form id="contactForm" onsubmit="return validateForm()">
+						<label for="name" class="form-label">Name:</label>
+						<input type="text" class="form-control mb-4" id="name" placeholder="e.g. Jason">
+                    
+						<label for="email" class="form-label">Email address:</label>
+						<input type="email" class="form-control mb-4" id="email" placeholder="e.g. jason@example.com">
+                    
+						<label for="contact_number" class="form-label">Contact Number:</label>
+						<input type="tel" class="form-control mb-4" id="contact_number" placeholder="e.g. +353832019874">
+                    
+						<label for="subject" class="form-label">What is your question about?</label>
+						<select class="form-select" id="subject">
+							<option value="" selected>Select a subject</option>
+							<option value="wrong_order">Wrong Order</option>
+							<option value="product_query">Product query</option>
+							<option value="other_query">Other query</option>
+						</select>
+                    
+						<div class="form-floating mb-4 mt-5">
+							<textarea id="query" class="form-control mb-4" style="height: 140px" placeholder="Your query..."></textarea>
+							<label for="query">Your query...</label>
+						</div>
+
+						<div class="mb-4 text-center">
+							<button type="submit" class="btn btn-secondary">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+	<!-- Add JS Script -->		
+	<script src="ContactUs.js"></script>
+
+	<!-- FOOTER -->	
+	<footer class="bg-light py-5 mt-5">
+		<div class="container text-dark text-center">
+			<p class="display-5 mb-3" > The Garden Shop</p>
+			<small class="text-dark-50">&copy; Copyright by The Garden Shop. All rights reserved.</small>
+		</div>
+	</footer>
+
+	<!-- BootStrap Script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+	</body>
+</html>

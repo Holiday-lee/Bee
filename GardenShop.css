@@ -1,0 +1,25 @@
+			h1, h2 {
+				font-family: Playfair Display;
+				color: #77aaaa;
+				margin-top: 25px;
+				margin-bottom: 25px;
+			}
+			
+			p {
+				font-family: Arial;
+				color: #77aaaa;
+				font-size: 20px;
+				margin-bottom: 35px;
+			}
+
+
+			.carousel-item img {
+				width: 75%;      
+				height: 400px;
+				object-fit: cover;
+				margin: 0 auto; 
+				display: block; 
+			}
+		 
+   
+		
